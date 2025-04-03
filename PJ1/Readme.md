@@ -31,4 +31,5 @@
 ├── optimizer.py             # 优化器实现
 ├── plot.py                  # 可视化loss,accuracy，卷积核权重
 ├── main.py                  # 主函数，在终端运行的代码
+├── params.pkl                 # 存放训练好的模型参数
 ```
