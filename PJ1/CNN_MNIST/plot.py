@@ -16,11 +16,11 @@ def plot_loss_curve(train_loss_list, test_loss_list):
 
 def plot_accuracy_curve(train_acc_list, test_acc_list):
     """绘制 accuracy 曲线"""
-    x = np.arange(len(train_acc_list))  # 获取步数作为x轴
+    epochs = np.arange(1, len(train_acc_list) + 1)  # 从1开始，表示epoch数
     plt.figure(figsize=(10, 5))
-    plt.plot(x, train_acc_list, marker='o', label='Train Accuracy', color='blue')
-    plt.plot(x, test_acc_list, marker='s', label='Test Accuracy', color='red')
-    plt.xlabel("Step")
+    plt.plot(epochs, train_acc_list, marker='o', label='Train Accuracy', color='blue')
+    plt.plot(epochs, test_acc_list, marker='s', label='Test Accuracy', color='red')
+    plt.xlabel("Epoch")  # 修改x轴标签为"Epoch"
     plt.ylabel("Accuracy")
     plt.ylim(0, 1.0)  # 保证accuracy在0到1之间
     plt.title("Accuracy Curve")
