@@ -4,7 +4,7 @@
 Run ResNet.ipynb.
 
 ## Train
-制定模型训练：
+指定模型训练：
 
 ```cmd
 python main.py --model ResNet18
